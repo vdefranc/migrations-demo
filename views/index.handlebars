@@ -1,0 +1,23 @@
+<h1>Pets Tracker</h1>
+<form action="/" method="post">
+
+  <label for="name">name:</label>
+  <input type="text" name="name" value="">
+
+  <br />
+  <br />
+
+  <label for="species">species:</label>
+  <input type="text" name="species" value="">
+
+  <br />
+  <br />
+
+  <button type="submit" name="button">add pet</button>
+</form>
+
+<h2>current pets</h2>
+{{#each pets}}
+  <p>name: {{name}}</p>
+  <p>species: {{species}}</p>
+{{/each}}
